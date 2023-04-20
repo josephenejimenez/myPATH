@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPATH - Donate</title>
+    <link rel="icon" href="media/myPATHlogo.svg">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/da2581949d.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="container-fluid bg-dark text-light">
+    
+    <header>
+
+        <nav class="container  navbar navbar-expand-md bg-dark navbar-dark">
+            <div class="container-fluid">
+                <!-- LOGO -->
+                <a class="navbar-brand" href="index.html"><h1>myPATH</h1></a>
+                
+                <!-- Responsive Hamburger Navigation-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./roadmaps.html">Roadmaps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./tutorials.html">Tutorials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./about.html">About</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="bg-secondary border rounded p-2">
+                        <a class="nav-link active rounded" href="./donate.html">Donate</a>
+                    </div>
+                    
+                </div>
+            </div>
+          </nav>
+
+    </header>
+
+    <main class="container-fluid d-flex flex-wrap justify-content-center">
+        
+        <div class="col-md-12 text-center">
+            <h1>Donate to myPATH</h1>
+            <p>Thank you! We appreciate your kindness.</p>
+        </div>
+
+        <!-- Donation Information -->
+        <section class="container border border-secondary rounded col-md-6 d-flex flex-column p-3 mb-3">
+            <div class="btn-group border mb-3">
+                <button type="button" class="btn btn-dark active">One-time</button>
+                <button type="button" class="btn btn-dark">Monthly</button>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text bg-dark text-light">$</span>
+                <input type="number" class="form-control bg-dark text-light text-end" aria-label="Amount (to the nearest dollar)" min="1">
+                <span class="input-group-text bg-dark text-light">.00</span>
+            </div>
+            <p>Pay via</p>
+            <span>
+
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Paypal" class="fa-brands fa-4x fa-cc-paypal"></i>
+                </a>
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Stripe" class="fa-brands fa-4x fa-cc-stripe"></i>
+                </a>
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Mastercard" class="fa-brands fa-4x fa-cc-mastercard"></i>
+                </a>
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Discover" class="fa-brands fa-4x fa-cc-discover"></i>
+                </a>
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="American Express" class="fa-brands fa-4x fa-cc-amex"></i>
+                </a>
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Visa" class="fa-brands fa-4x fa-cc-visa"></i>
+                </a>
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Diners Club" class="fa-brands fa-4x fa-cc-diners-club"></i>
+                </a>
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Amazon Pay" class="fa-brands fa-4x fa-cc-amazon-pay"></i>
+                </a>
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="JCB" class="fa-brands fa-4x fa-cc-jcb"></i>
+                </a>
+                <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Google Pay" class="fa-brands fa-4x fa-google-pay"></i>
+                </a>
+            </span>
+            
+            
+        </section>
+        <div class="col-md-1"></div>
+        <!-- Billing Section -->
+        <section class="collapse col-md-5" id="cc-checkout">
+            <div class="border border-secondary rounded d-flex flex-column p-3">
+                <h3>Billing Information</h3>
+                    <form action="#" class="d-flex flex-column">
+                        <label class="form-label" for="fullname">Full name</label>
+                        <input class="form-control bg-transparent text-light" type="text" placeholder="Default input"                      aria-label="default input example">
+                    
+                    
+                    </form>
+                <hr>
+
+                    <h3>Card Information</h3>
+                        <div class="container">
+                            <label class="form-label" for="card-name">Your name</label>
+                            <input type="text" id="card-name" class="form-control bg-dark col-md-5">
+                        </div>
+                    </div>           
+            
+            
+        </section>
+        
+        
+    </main>
+
+    <footer class="container-fluid bg-dark text-white p-5">
+        <div class="row p-5">
+            <div class="col-md-8 my-auto">
+                <h1 class="fw-bold">Contact Us</h1>
+                <a href="mailto:contact@mypath.com" title="Click to send mail" class="text-light link-offset-2 link-underline link-underline-opacity-0">contact@mypath.com</a>
+                <p>(0909) 123 456 789</p>
+            </div>
+            <div class="col-md-4 my-auto">
+                <p class="fw-bold mb-0">myPATH</p>
+                <p>your companion map to your quest to knowledge</p>
+                <small>Website developed by <strong>Josephene Jimenez</strong></small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javascript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
