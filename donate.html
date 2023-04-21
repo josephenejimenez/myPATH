@@ -79,7 +79,7 @@
 
                 <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Paypal" class="fa-brands fa-4x fa-cc-paypal"></i>
                 </a>
-                <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Stripe" class="fa-brands fa-4x fa-cc-stripe"></i>
+                <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="stripe-error" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Stripe" class="fa-brands fa-4x fa-cc-stripe"></i>
                 </a>
                 <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Mastercard" class="fa-brands fa-4x fa-cc-mastercard"></i>
                 </a>
@@ -154,9 +154,27 @@
                 <button type="submit" class="btn btn-outline-secondary text-light mt-4">Proceed to donate</button>
             </div>
             
-            
-            
         </section>
+
+        <!--stripe error modal -->
+        <div class="modal fade" id="stripe-error" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Payment Method Unavailable</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Sorry, the selected payment method is currently unavailable. Please select other payment method.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         
         
     </main>
