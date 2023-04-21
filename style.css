@@ -29,7 +29,6 @@ nav li>a:hover:after {
 
 .container-body:hover {
     opacity: 75%;
-    cursor: pointer;
 }
 .arr-down div {
     height: 20px;
