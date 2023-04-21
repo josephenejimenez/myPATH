@@ -56,7 +56,7 @@
 
     </header>
 
-    <main class="container-fluid d-flex flex-wrap justify-content-center">
+    <main class="container-fluid d-flex flex-wrap justify-content-center mt-3">
         
         <div class="col-md-12 text-center">
             <h1>Donate to myPATH</h1>
@@ -64,7 +64,7 @@
         </div>
 
         <!-- Donation Information -->
-        <section class="container border border-secondary rounded col-md-6 d-flex flex-column p-3 mb-3">
+        <section class="container border border-secondary rounded col-md-6 d-flex flex-column p-3 mb-3 mt-4">
             <div class="btn-group border mb-3">
                 <button type="button" class="btn btn-dark active">One-time</button>
                 <button type="button" class="btn btn-dark">Monthly</button>
@@ -76,10 +76,9 @@
             </div>
             <p>Pay via</p>
             <span>
-
                 <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Paypal" class="fa-brands fa-4x fa-cc-paypal"></i>
                 </a>
-                <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="stripe-error" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Stripe" class="fa-brands fa-4x fa-cc-stripe"></i>
+                <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#stripe-error" role="button"><i title="Stripe" class="fa-brands fa-4x fa-cc-stripe"></i>
                 </a>
                 <a class="btn btn-dark" data-bs-toggle="collapse" href="#cc-checkout" role="button" aria-expanded="false" aria-controls="cc-checkout"><i title="Mastercard" class="fa-brands fa-4x fa-cc-mastercard"></i>
                 </a>
@@ -103,7 +102,7 @@
         </section>
         <div class="col-md-1"></div>
         <!-- Billing Section -->
-        <section class="collapse col-md-5" id="cc-checkout">
+        <section class="collapse col-md-5 mt-4" id="cc-checkout">
             <div class="border border-secondary rounded d-flex flex-column p-3">
                 
                 <h3 class="fw-bold mb-3">Billing Information</h3>
@@ -159,7 +158,7 @@
         <!--stripe error modal -->
         <div class="modal fade" id="stripe-error" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
+              <div class="modal-content bg-dark">
                 <div class="modal-header">
                   <h1 class="modal-title fs-5" id="exampleModalLabel">Payment Method Unavailable</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -169,7 +168,6 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-secondary">Save changes</button>
                 </div>
               </div>
             </div>
