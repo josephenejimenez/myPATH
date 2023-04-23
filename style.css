@@ -27,7 +27,7 @@ nav li>a:hover:after {
     width: 100%;
 }
 
-.expand:hover {
+.container-body:hover {
     opacity: 75%;
     cursor: pointer;
 }
@@ -39,6 +39,9 @@ nav li>a:hover:after {
     transform: rotate(225deg);
 }
 
+svg .clickable-group {
+    cursor: pointer;
+}
 
 
 @media (min-width: 768px) {
