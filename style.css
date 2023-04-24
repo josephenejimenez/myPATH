@@ -43,6 +43,25 @@ svg .clickable-group {
     cursor: pointer;
 }
 
+svg #bg-1 {
+    animation-name: text-fade ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+svg #bg-2 {
+    animation-name: text-fade ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes text-fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    } 
+}
 
 @media (min-width: 768px) {
     .carousel-inner {
