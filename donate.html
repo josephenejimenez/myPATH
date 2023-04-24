@@ -114,7 +114,21 @@
                         <div class="col-md-11 d-flex flex-wrap">
                             <div class="col-md-8">
                                 <label class="form-label" for="country">Country</label>
-                                <input class="form-control bg-transparent text-light" type="text" id="country" required>
+                                <select  class="form-select bg-dark text-light"id="country" name="country">
+                                    <option value="">Choose...</option>
+                                    <option value="afghanistan">Afghanistan</option>
+                                    <option value="albania">Albania</option>
+                                    <option value="algeria">Algeria</option>
+                                    <option value="andorra">Andorra</option>
+                                    <option value="angola">Angola</option>
+                                    <option value="antigua-and-barbuda">Antigua and Barbuda</option>
+                                    <option value="argentina">Argentina</option>
+                                    <option value="armenia">Armenia</option>
+                                    <option value="australia">Australia</option>
+                                    <option value="austria">Austria</option>
+                                    <option value="azerbaijan">Azerbaijan</option>
+                                    <!-- more options here -->
+                                  </select>
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-3">
@@ -133,7 +147,7 @@
                     </div>
                     <div class="col-md-11 mb-1">
                         <label class="form-label" for="card-number">Credit Card Number</label>
-                        <input class="form-control bg-transparent text-light" type="text" id="card-number" required>
+                        <input class="form-control bg-transparent text-light" type="text" id="card-number" minlength="13" required>
                     </div>
                     <div class="col-md-11 d-flex flex-wrap">
                         <div class="col-md-8">
@@ -142,7 +156,7 @@
                         </div>
                         <div class="col-md-4">
                             <label class="form-label" for="card-cvv">CVV2</label>
-                            <input class="form-control bg-transparent text-light" type="number" id="card-cvv" minlength="4" required>
+                            <input class="form-control bg-transparent text-light" type="number" id="card-cvv" minlength="3" required>
                         </div>
                     </div>
                 </form>
